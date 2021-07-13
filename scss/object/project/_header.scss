@@ -1,0 +1,37 @@
+@import "../../foundation/base";
+
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-white;
+
+  &__title {
+    display: flex;
+    line-height: 2rem;
+    margin-left: 1.4rem;
+    align-items: center;
+
+    &__logo img {
+      height: 2.1rem;
+      width: auto;
+    }
+    p {
+      margin-left: 1rem;
+      line-height: 1.3rem;
+      font-weight: bold;
+      @include x-large {
+        display: none;
+      }
+
+      strong {
+        font-size: 1.1rem
+      }
+    }
+  }
+
+  // &__nav {
+  //   display: flex;
+  //   justify-content: space-between;
+  // }
+}
+

@@ -1,0 +1,17 @@
+@import "../../foundation/base";
+
+.c-button {
+  background-color: $color-blue-dark;
+  color: $color-white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 1.5rem 2.3rem;
+  font-weight: bold;
+  font-size: 1.125rem;
+  @include small {
+    padding: 12px 18px;
+    font-size: 10px;
+    font-size: 1rem;
+  }
+
+}

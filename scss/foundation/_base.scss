@@ -1,0 +1,49 @@
+// COLOR DEFINITION
+// ================================================
+$color-blue: #2bb8d9;
+$color-blue-light:#d4f1f8;
+$color-blue-dark: #2498b3;
+$color-blue-white: #e9f8fb;
+$color-blue-white-sub: #f3fafb;
+
+$color-white: #ffffff;
+$color-black: #121212;
+$color-beige: #f7f7f7;
+
+$color-gray: #4b4b4b;
+$color-navy: #131d34;
+$color-green: #a2d729;
+
+// GENERAL STYLING
+// ================================================
+html {
+  font-size: 100%;
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+
+body {
+  width: 100%;
+  margin:0;
+  padding:0;
+  background-color: $color-white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+// COMMON
+// ================================================ 
+p {
+  line-height: 1.7;
+}
+img {
+  max-width: 100%;
+}

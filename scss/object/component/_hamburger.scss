@@ -1,0 +1,62 @@
+@import "../../foundation/base";
+
+// HAMBURGER BUTTON===========================
+// ===========================================
+.c-hamburger {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    right: 13px;
+    top: 4px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    @include large {
+        display: block;
+    }
+    & span {
+        display: block;
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: 6px;
+        background-color: $color-blue-dark;
+        transition: 0.3s ease-in-out;
+        &:nth-child(1) {
+            top: 10px;
+        }
+        &:nth-child(2) {
+            top: 20px;
+        }
+        &:nth-child(3) {
+            top: 30px;
+        }
+    }
+
+    // ナビ開いてる時のボタン===========================
+    // ===========================================
+    &.active {
+        width: 50px;
+        height: 50px;
+        background-color: $color-blue-dark;
+
+        & span {
+            background-color: $color-white;
+            
+            &:nth-child(1) {
+                top: 25px;
+                left: 12px;
+                transform: rotate(-45deg);
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+                top: 25px;
+                left: 13px;
+                transform: rotate(45deg);
+            }
+        }
+    } 
+}
+
+

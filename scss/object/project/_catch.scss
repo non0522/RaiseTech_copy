@@ -1,0 +1,24 @@
+.p-catch {
+  padding: 4rem 0;
+  width: 100%;
+  background-color: $color-black;
+  color: $color-white;
+  @include small {
+    padding: 4rem;
+  }
+
+  &__wrapper {
+    top: -70%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 1078px;
+    margin: -263px auto 12px;
+    @include small {
+      top: 0;
+      display: block;
+      margin: auto;
+    }
+  }
+}

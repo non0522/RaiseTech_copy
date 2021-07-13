@@ -1,0 +1,65 @@
+@import "../../foundation/base";
+
+.c-icon {
+  margin: 0 50px;
+  width: 231px;
+  @include middle {
+    width: 29.33%;
+    margin: 0 2%;
+  }
+  @include small {
+    margin: 0 auto 2.5rem;
+    width: auto;
+    text-align: center;
+  }
+
+  > p {
+    font-weight: bold;
+  }
+  
+  &__FA {
+    width: 230px;
+    height: 230px;
+    color: $color-black;
+    background-color: $color-white;
+    border-radius: 50%;
+    border: solid 6px $color-black;
+    margin: 0 auto;
+    
+    &::before {
+      display: block;
+      color: $color-black; 
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 6rem;
+      margin-top: 60px;
+    }
+    &-1::before {
+      content: "\f44b";
+      text-align: center;
+    }
+    &-2::before {
+      content: "\f2bb";
+      text-align: center;
+    }
+    &-3::before {
+      content: "\f1cd";
+      text-align: center;
+    }
+
+  }
+    &__title {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+    
+    &__desc {
+      font-weight: bold;
+      margin-top: 10px;
+      line-height: 28px;
+      display: inline-block;
+    }
+    
+}
